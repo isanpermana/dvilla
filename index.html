@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <meta charset="utf-8"> -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+    <!-- <meta name="format-detection" content="telephone=no"> -->
+    <!-- <meta name="msapplication-tap-highlight" content="no"> -->
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <!-- <meta name="color-scheme" content="light dark"> -->
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+    <title>Dvilla</title>
+</head>
+
+<body>
+    <div id="utama">
+        <div id="header">
+            <img id="header_logo" src="img/logo.png">
+            <div id="header_alamat">Villa Kota Bunga Jl. Hanjawar - Cipanas</div>
+        </div>
+        <div id="isi">
+            <div class="kartu">
+                <div class="kartu_img_cont">
+                    <img class="kartu_img" src="img/vila_1a.jpg">
+                </div>
+                <div class="kartu_preview_cont">
+                    <img class="kartu_preview_a" src="img/vila_1a.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_b" src="img/vila_1b.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_c" src="img/vila_1c.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_d" src="img/vila_1d.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_e" src="img/vila_1e.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_f" src="img/vila_1f.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_g" src="img/vila_1g.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_h" src="img/vila_1h.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_i" src="img/vila_1i.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_j" src="img/vila_1j.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_k" src="img/vila_1k.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_l" src="img/vila_1l.jpg" onclick="preview_tampil();">
+                </div>
+                <div class="kartu_nama">Villa Cowboy</div>
+                <div class="kartu_lokasi">Villa Kota Bunga Blok J 1/08</div>
+                <div class="kartu_fasilitas">
+                    <div class="kartu_logo_text">3 Bedroom</div>
+                    <div class="kartu_logo_text">2 Bathroom</div>
+                    <br>
+                    <img class="kartu_logo" src="img/wifi.png"><div class="kartu_logo_desc">Wifi</div>
+                    <img class="kartu_logo" src="img/tv.png"><div class="kartu_logo_desc">TV</div>
+                    <img class="kartu_logo" src="img/karaoke.png"><div class="kartu_logo_desc">Karaoke</div>
+                    <img class="kartu_logo" src="img/ac.png"><div class="kartu_logo_desc">AC</div>
+                    <br>
+                    <img class="kartu_logo" src="img/shower.png"><div class="kartu_logo_desc">Water Heater</div>
+                    <img class="kartu_logo" src="img/kitchen.png"><div class="kartu_logo_desc">Kitchen Set</div>
+                    <img class="kartu_logo" src="img/barbeque.png"><div class="kartu_logo_desc">Barbeque</div>
+                </div>
+                <div class="kartu_kapasitas">Kapasitas: Maksimal 8 orang</div>
+                <div class="kartu_harga_titel">Weekday</div>
+                <div class="kartu_harga">Rp. 550.000</div>
+                <div class="kartu_harga_titel">Weekend</div>
+                <div class="kartu_harga">Rp. 750.000</div>
+                <div id="kp_1" class="kartu_pesan" onclick="pesan_whatsapp();">
+                    <img id="kpi_1" class="kartu_pesan_img" src="img/whatsapp.png">
+                    <div id="kpt_1" class="kartu_pesan_text">Pesan Sekarang</div>
+                </div>
+            </div>
+            <div class="kartu">
+                <div class="kartu_img_cont">
+                    <img class="kartu_img" src="img/vila_2a.jpg">
+                </div>
+                <div class="kartu_preview_cont">
+                    <img class="kartu_preview_a" src="img/vila_2a.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_b" src="img/vila_2b.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_c" src="img/vila_2c.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_d" src="img/vila_2d.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_e" src="img/vila_2e.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_f" src="img/vila_2f.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_g" src="img/vila_2g.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_h" src="img/vila_2h.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_i" src="img/vila_2i.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_j" src="img/vila_2j.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_k" src="img/vila_2k.jpg" onclick="preview_tampil();">
+                </div>
+                <div class="kartu_nama">Villa Osaka</div>
+                <div class="kartu_lokasi">Villa Kota Bunga Blok J 1/06</div>
+                <div class="kartu_fasilitas">
+                    <div class="kartu_logo_text">3 Bedroom</div>
+                    <div class="kartu_logo_text">2 Bathroom</div>
+                    <br>
+                    <img class="kartu_logo" src="img/wifi.png"><div class="kartu_logo_desc">Wifi</div>
+                    <img class="kartu_logo" src="img/tv.png"><div class="kartu_logo_desc">TV</div>
+                    <img class="kartu_logo" src="img/karaoke.png"><div class="kartu_logo_desc">Karaoke</div>
+                    <img class="kartu_logo" src="img/ac.png"><div class="kartu_logo_desc">AC</div>
+                    <br>
+                    <img class="kartu_logo" src="img/shower.png"><div class="kartu_logo_desc">Water Heater</div>
+                    <img class="kartu_logo" src="img/kitchen.png"><div class="kartu_logo_desc">Kitchen Set</div>
+                    <img class="kartu_logo" src="img/barbeque.png"><div class="kartu_logo_desc">Barbeque</div>
+                </div>
+                <div class="kartu_kapasitas">Kapasitas: Maksimal 10 orang</div>
+                <div class="kartu_harga_titel">Weekday</div>
+                <div class="kartu_harga">Rp. 550.000</div>
+                <div class="kartu_harga_titel">Weekend</div>
+                <div class="kartu_harga">Rp. 800.000</div>
+                <div id="kp_2" class="kartu_pesan" onclick="pesan_whatsapp();">
+                    <img id="kpi_2" class="kartu_pesan_img" src="img/whatsapp.png">
+                    <div id="kpt_2" class="kartu_pesan_text">Pesan Sekarang</div>
+                </div>
+            </div>
+            <div class="kartu">
+                <div class="kartu_img_cont">
+                    <img class="kartu_img" src="img/vila_3a.jpg">
+                </div>
+                <div class="kartu_preview_cont">
+                    <img class="kartu_preview_a" src="img/vila_3a.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_3b.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_3c.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_3d.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_3e.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_3f.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_3g.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_3h.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_3i.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_3j.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_3k.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_3l.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_3m.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_3n.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_3o.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_3p.jpg" onclick="preview_tampil();">
+                </div>
+                <div class="kartu_nama">Villa Carravan 1</div>
+                <div class="kartu_lokasi">Villa Kota Bunga Blok K 1/29</div>
+                <div class="kartu_fasilitas">
+                    <div class="kartu_logo_text">4 Bedroom</div>
+                    <div class="kartu_logo_text">3 Bathroom</div>
+                    <br>
+                    <img class="kartu_logo" src="img/wifi.png"><div class="kartu_logo_desc">Wifi</div>
+                    <img class="kartu_logo" src="img/tv.png"><div class="kartu_logo_desc">TV</div>
+                    <img class="kartu_logo" src="img/karaoke.png"><div class="kartu_logo_desc">Karaoke</div>
+                    <img class="kartu_logo" src="img/ac.png"><div class="kartu_logo_desc">AC</div>
+                    <br>
+                    <img class="kartu_logo" src="img/shower.png"><div class="kartu_logo_desc">Water Heater</div>
+                    <img class="kartu_logo" src="img/kitchen.png"><div class="kartu_logo_desc">Kitchen Set</div>
+                    <img class="kartu_logo" src="img/barbeque.png"><div class="kartu_logo_desc">Barbeque</div>
+                </div>
+                <div class="kartu_kapasitas">Kapasitas: Maksimal 12 orang</div>
+                <div class="kartu_harga_titel">Weekday</div>
+                <div class="kartu_harga">Rp. 900.000</div>
+                <div class="kartu_harga_titel">Weekend</div>
+                <div class="kartu_harga">Rp. 1.200.000</div>
+                <div id="kp_3" class="kartu_pesan" onclick="pesan_whatsapp();">
+                    <img id="kpi_3" class="kartu_pesan_img" src="img/whatsapp.png">
+                    <div id="kpt_3" class="kartu_pesan_text">Pesan Sekarang</div>
+                </div>
+            </div>
+            <div class="kartu">
+                <div class="kartu_img_cont">
+                    <img class="kartu_img" src="img/vila_4a.jpg">
+                </div>
+                <div class="kartu_preview_cont">
+                    <img class="kartu_preview_a" src="img/vila_4a.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_4b.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_4c.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_4d.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_4e.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_4f.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_4g.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_4h.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_4i.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_4j.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_4k.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_4l.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_4m.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_4n.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_4o.jpg" onclick="preview_tampil();">
+                    <!-- <img class="kartu_preview_a" src="img/vila_4p.jpg" onclick="preview_tampil();"> -->
+                </div>            
+                <div class="kartu_nama">Villa Carravan 2</div>
+                <div class="kartu_lokasi">Villa Kota Bunga Blok K 2/11</div>
+                <div class="kartu_fasilitas">
+                    <div class="kartu_logo_text">4 Bedroom</div>
+                    <div class="kartu_logo_text">4 Bathroom</div>
+                    <br>
+                    <img class="kartu_logo" src="img/wifi.png"><div class="kartu_logo_desc">Wifi</div>
+                    <img class="kartu_logo" src="img/tv.png"><div class="kartu_logo_desc">Netflix Floating</div>
+                    <img class="kartu_logo" src="img/karaoke.png"><div class="kartu_logo_desc">Youtube Karaoke</div>
+                    <img class="kartu_logo" src="img/ac.png"><div class="kartu_logo_desc">AC</div>
+                    <br>
+                    <img class="kartu_logo" src="img/pool.png"><div class="kartu_logo_desc">Private Pool</div>
+                    <img class="kartu_logo" src="img/shower.png"><div class="kartu_logo_desc">Water Heater</div>
+                    <img class="kartu_logo" src="img/kitchen.png"><div class="kartu_logo_desc">Kitchen Equipment</div>
+                    <br>
+                    <img class="kartu_logo" src="img/barbeque.png"><div class="kartu_logo_desc">Barbeque</div>
+                    <br>
+                    <div class="kartu_logo_desc">Balcon</div>
+                    <div class="kartu_logo_desc">Living Room</div>
+                    <div class="kartu_logo_desc">Dinning Room</div>
+                    <div class="kartu_logo_desc">Gazebo</div>
+                    <br>
+                    <div class="kartu_logo_desc">FREE: Snack and Tea/ Welcome Banquet</div>
+                </div>
+                <div class="kartu_kapasitas">Kapasitas: Maksimal 12 orang</div>
+                <div class="kartu_harga_titel">Weekday</div>
+                <div class="kartu_harga">Rp. 2.800.000</div>
+                <div class="kartu_harga_titel">Weekend</div>
+                <div class="kartu_harga">Rp. 3.500.000</div>
+                <div id="kp_4" class="kartu_pesan" onclick="pesan_whatsapp();">
+                    <img id="kpi_4" class="kartu_pesan_img" src="img/whatsapp.png">
+                    <div id="kpt_4" class="kartu_pesan_text">Pesan Sekarang</div>
+                </div>
+            </div>
+            <div class="kartu">
+                <div class="kartu_img_cont">
+                    <img class="kartu_img" src="img/vila_5a.jpg">
+                </div>
+                <div class="kartu_preview_cont">
+                    <img class="kartu_preview_a" src="img/vila_5a.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_5b.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_5c.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_5d.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_5e.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_5f.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_5g.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_5h.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_5i.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_5j.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_5k.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_5l.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_5m.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_5n.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_5o.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_5p.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_5q.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_5r.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_5s.jpg" onclick="preview_tampil();">
+                    <img class="kartu_preview_a" src="img/vila_5t.jpg" onclick="preview_tampil();">
+                </div>            
+                <div class="kartu_nama">Villa Queen</div>
+                <div class="kartu_lokasi">Villa Kota Bunga Blok CC 5/30</div>
+                <div class="kartu_fasilitas">
+                    <div class="kartu_logo_text">5 Bedroom</div>
+                    <div class="kartu_logo_text">5 Bathroom</div>
+                    <br>
+                    <img class="kartu_logo" src="img/wifi.png"><div class="kartu_logo_desc">Wifi</div>
+                    <img class="kartu_logo" src="img/tv.png"><div class="kartu_logo_desc">Smart TV</div>
+                    <img class="kartu_logo" src="img/karaoke.png"><div class="kartu_logo_desc">Karaoke</div>
+                    <img class="kartu_logo" src="img/ac.png"><div class="kartu_logo_desc">AC</div>
+                    <br>
+                    <img class="kartu_logo" src="img/shower.png"><div class="kartu_logo_desc">Water Heater</div>
+                    <img class="kartu_logo" src="img/kitchen.png"><div class="kartu_logo_desc">Kitchen Equipment</div>
+                    <img class="kartu_logo" src="img/barbeque.png"><div class="kartu_logo_desc">Barbeque</div>
+                    <div class="kartu_logo_desc">Balcon</div>
+                </div>
+                <div class="kartu_kapasitas">Kapasitas: Maksimal 14 orang</div>
+                <div class="kartu_harga_titel">Weekday</div>
+                <div class="kartu_harga">Rp. 1.800.000</div>
+                <div class="kartu_harga_titel">Weekend</div>
+                <div class="kartu_harga">Rp. 2.200.000</div>
+                <div id="kp_5" class="kartu_pesan" onclick="pesan_whatsapp();">
+                    <img id="kpi_5" class="kartu_pesan_img" src="img/whatsapp.png">
+                    <div id="kpt_5" class="kartu_pesan_text">Pesan Sekarang</div>
+                </div>
+            </div>            
+        </div>
+        <div id="pesan_sekarang">
+            <img id="pesan_sekarang_img" src="img/whatsapp.png">
+            <div id="pesan_sekarang_text" onclick="hubungi_kami_whatsapp();">Hubungi Kami</div>
+        </div>
+        <div id="footer">
+            <div id="kata_kunci_cont">
+                <div id="kata_kunci_text">Kata Kunci</div>
+                <div class="kata_kunci">2 Kamar</div>
+                <div class="kata_kunci">3 Kamar</div>
+                <div class="kata_kunci">4 Kamar</div>
+                <div class="kata_kunci">Kolam Renang</div>
+                <div class="kata_kunci">Karaoke</div>
+            </div>
+            <div id="sosmed_cont">
+                <div id="sosmed_text">Social Media Kami</div>
+                <img class="sosmed_img" src="img/tiktok.png">
+                <img class="sosmed_img" src="img/instagram.png">
+                <img class="sosmed_img" src="img/facebook.png">
+                <img class="sosmed_img" src="img/twitter.png">
+            </div>
+        </div>
+        <div id="created">Logican Berkah Semesta<br>085860234617<br>mylogican@gmail.com</div>
+    </div>
+    <style>
+        body {
+            position: absolute;
+            margin: 0;
+            padding: 0 3%;
+            background-color: black;
+            color: white;
+            font-family: Calibri;
+            width: 94%;
+        }
+
+        #header {
+            width: 96%;
+            padding: 20px 2% 10px 2%;
+        }
+
+        #header_logo {
+            display: inline-block;
+            width: 150px;
+        }
+
+        #header_alamat {
+            font-size: 8pt;
+            color: gray;
+        }
+
+        #isi {
+            width: 100%;
+            margin: 10px 0 20px 0;
+            text-align: center;
+        }
+
+        .kartu {
+            display: inline-block;
+            width: 95%;
+            background-color: #222222;
+            border-radius: 5px;
+            padding: 12px 2%;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .kartu_img_cont{
+            display: inline-block;
+            width: 98%;
+            border: thin solid #333333;
+            height: 220px;
+            overflow: hidden;
+            margin: 0 0 8px 0;
+        }
+        .kartu_img {
+            height: 100%;
+        }
+        .kartu_preview_cont{
+            margin: 0 0 10px 0;
+        }
+        .kartu_preview_a,
+        .kartu_preview_b,
+        .kartu_preview_c,
+        .kartu_preview_d,
+        .kartu_preview_e,
+        .kartu_preview_f,
+        .kartu_preview_g,
+        .kartu_preview_h,
+        .kartu_preview_i,
+        .kartu_preview_j,
+        .kartu_preview_k,
+        .kartu_preview_l
+        {
+            display: inline-block;
+            height: 25px;
+        }
+        .kartu_nama {
+            font-size: 14pt;
+            font-weight: bold;
+        }
+
+        .kartu_lokasi {
+            color: gray;
+            font-size: 11pt;
+        }
+
+        .kartu_fasilitas {
+            margin: 5px 0;
+            vertical-align: middle;
+            color: gray;
+        }
+
+        .kartu_logo {
+            display: inline-block;
+            vertical-align: middle;
+            height: 12px;
+            margin: 0 1px;
+        }
+        .kartu_logo_desc{
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 8pt;
+            margin: 0 3px 0 2px;
+        }
+
+        .kartu_logo_text {
+            display: inline-block;
+            vertical-align: middle;
+            background-color: gray;
+            color: #333333;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-size: 8pt;
+        }
+
+        .kartu_kapasitas {
+            font-size: 9pt;
+            color: gray;
+        }        
+        .kartu_harga_titel {
+            font-size: 9pt;
+            color: darkgray;
+        }
+        .kartu_harga {
+            font-size: 11pt;
+        }
+
+        .kartu_pesan {
+            display: inline-block;
+            width: 45%;
+            padding: 3px 0;
+            text-align: center;
+            margin: 9px 0 0 0;
+            background-color: #339933;
+            border-radius: 5px;
+        }
+
+        .kartu_pesan_img {
+            display: inline-block;
+            vertical-align: middle;
+            height: 20px;
+        }
+
+        .kartu_pesan_text {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 10pt;
+        }
+
+        #kata_kunci_cont {
+            width: 100%;
+            margin: 25px 0 9px 0;
+            text-align: center;
+        }
+
+        #kata_kunci_text {
+            font-size: 10pt;
+            color: gray;
+            margin: 0 0 5px 0;
+        }
+
+        .kata_kunci {
+            display: inline-block;
+            padding: 5px 7px;
+            background-color: #333333;
+            color: whitesmoke;
+            border-radius: 5px;
+            font-size: 9pt;
+            margin: 3px 0;
+        }
+
+        #sosmed_cont {
+            width: 100%;
+            text-align: center;
+        }
+
+        #sosmed_text {
+            font-size: 10pt;
+            color: gray;
+        }
+
+        .sosmed_img {
+            display: inline-block;
+            height: 18px;
+            margin: 5px 2px;
+        }
+
+        #pesan_sekarang {
+            width: 250px;
+            padding: 9px 0;
+            text-align: center;
+            border-radius: 5px;
+            background-color: #339933;
+            margin: 0 auto;
+        }
+
+        #pesan_sekarang_img {
+            display: inline-block;
+            vertical-align: middle;
+            height: 30px;
+        }
+
+        #pesan_sekarang_text {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 12pt;
+            margin: 0 0 0 5px;
+        }
+
+        #created {
+            width: 100%;
+            text-align: center;
+            font-size: 7pt;
+            color: #444444;
+            margin: 10px 0;
+        }
+
+        @media only screen and (min-width: 600px) {
+            .kartu {
+                width: 25%;
+                vertical-align: top;
+            }
+
+            #header_logo {
+                width: 200px;
+            }
+        }
+    </style>
+    <script>
+        let kartu_img_c = document.getElementsByClassName('kartu_img');
+        let kartu_nama_c = document.getElementsByClassName('kartu_nama');
+        let kartu_lokasi_c = document.getElementsByClassName('kartu_lokasi');
+        let kartu_harga_c = document.getElementsByClassName('kartu_harga');
+
+        function pesan_whatsapp() {
+            let kode_pesan = Number(String(event.target.id).replace('kp_', '').replace('kpi_', '').replace('kpt_',
+                '')) - 1;
+            console.log(kode_pesan);
+            let isi_pesan =
+                'Kakak Dvilla, saya pesan:\n' +
+                kartu_nama_c[kode_pesan].innerHTML + '\n' +
+                kartu_lokasi_c[kode_pesan].innerHTML + '\n' +
+                'Terima Kasih.'
+            window.open('https://api.whatsapp.com/send?phone=6287720310551&text=' + (window.encodeURIComponent(
+                isi_pesan)));
+        }
+
+        function hubungi_kami_whatsapp() {
+            window.open('https://api.whatsapp.com/send?phone=6287720310551&text=' + (window.encodeURIComponent(
+                'Hallo Kakak, saya mau pesan vila.')));
+        }
+
+        function preview_tampil() {
+            let kode_preview = String(String(event.target.src).split('img/vila_')[1]).replace('.jpg','').slice(0,-1) - 1;
+            kartu_img_c[kode_preview].src = String(event.target.src);
+        }
+    </script>
+    <!-- <script src="cordova.js"></script> -->
+    <!-- <script src="js/index.js"></script> -->
+</body>
+
+</html>
